@@ -1,0 +1,1 @@
+This repository will help you master scripting through numerous scenario-based questions. Whether it's shell scripting or Python scripting, we've covered it all. Follow along and stay committed—you
