@@ -5,7 +5,7 @@
 #!/bin/bash
 # Function to prompt for yes or no input
 prompt_yes_no(){
-    while(1); do
+    while(true); do
         read -p " Please enter 'yes' or 'no': " answer
         # Convert input to lowercase for case-insensitive comparison
         answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
