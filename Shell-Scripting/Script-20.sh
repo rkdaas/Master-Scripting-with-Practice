@@ -2,8 +2,8 @@
 #############################################Start of Script-20.sh#############################################
 #!/bin/bash
 echo "Starting the script to search for a word in a text file..."
-word=$1  # The word to search for is passed as the first argument
-file="data.txt"  # The file to search in
+word="$1"
+file="$2"
 if [ ! -f $file ]; then 
     echo "Error: The file $file does not exist."
     exit 1  # Exit with status code 1 indicating an error
