@@ -10,7 +10,6 @@ do
     fi
 done
 #######################################End of the script#########################################
-# End of the script
 # Save this script as Script10.sh and run it to see the output.
 # Usage: chmod +x Script10.sh && ./Script10.sh
 # This script will print each even number from 1 to 20 on a new line.
