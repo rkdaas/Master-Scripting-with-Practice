@@ -12,13 +12,14 @@
 #   I created this script that standardized all scheduled tasks across the team
 
 read -r -p "enter the schedule" schedule
+read -r -p "enter the script to run or command to run " fullPath
 crontab -l 2>/dev/null > tmpcron
 # crontab - prints all existing cron jobs from the cron spool file /var/spool/cron/crontabs file 
 # Output is redirected to a file named tmpcron - doing this because 
 # We must not overwrite existing cron jobs.
 # If you write a fresh file directly, you can destroy all other jobs.
 # 2>/dev/null hides the error message if crontab is empty.
-echo "$schedule" >> tmpcron 
+echo "$schedule" $fullPath >> tmpcron 
 # appending the new cron to tmpcron file 
 crontab tmpcron
 # installing tmpcron in crontab meaning you would write the tmpcron cron jobs to crontab file 
